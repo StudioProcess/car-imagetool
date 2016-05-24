@@ -1,10 +1,9 @@
-$icon-font-path: '../fonts/';
-
 // bower:scss
 @import "settings"; // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 @import "bower_components/foundation-sites/scss/foundation.scss";
 // endbower
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,500);
 
 @include foundation-everything(true);
 
@@ -17,6 +16,7 @@ $icon-font-path: '../fonts/';
 
 /* Space out content a bit */
 body {
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -39,6 +39,26 @@ body {
     margin-bottom: 0;
     line-height: 40px;
     padding-bottom: 19px;
+  }
+}
+
+.image-upload {
+  width: 100%;
+  min-height: 400px;
+  text-align: center;
+  align-items: center;
+  background-color: #EFEFEF;
+}
+
+.title {
+  font-weight: 500;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  //margin: 2em 0;
+  font-size: 25px;
+  line-height: 28px;
+  a {
+    font-weight: 500;
   }
 }
 

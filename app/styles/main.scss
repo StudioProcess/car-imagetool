@@ -53,9 +53,9 @@ body {
 }
 
 .image-upload {
-  padding: 1em;
-  width: 100%;
-  //min-height: 400px;
+  //padding: 1em;
+  //width: 90%;
+  min-height: 400px;
   display: flex;
   justify-content: center; /* align horizontal */
   align-items: center; /* align vertical */
@@ -68,6 +68,8 @@ body {
 }
 
 .image-template {
+  margin: 0;
+  padding: 0;
   //padding: 0.1em;
   width: 100%;
   min-height: 400px;
@@ -76,8 +78,8 @@ body {
   .single-template {
     margin-left: 0.1em;
     padding: 0.5em;
-    min-height: 100px;
-    //border-bottom: 1px solid #EFEFEF;
+    //min-height: 100px;
+    border: 1px solid #FFF;
 
     &:hover {
       //background-color: #EFEFEF;
@@ -85,10 +87,31 @@ body {
     }
   }
 }
+
 .options-template {
   padding: 0.5em;
-  margin-left: 0.1em;
+  //margin-left: 0.1em;
+  margin-top: 0.5em;
   border-top: 1px solid #EFEFEF;
+  display: flex;
+  justify-content: center;
+
+  .text {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 0.5em;
+  }
+}
+
+.content-right {
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+  align-items: right;
+}
+.content-center {
+  display: flex;
+  justify-content: center;
 }
 
 .template-chooser-title {

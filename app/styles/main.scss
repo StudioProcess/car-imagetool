@@ -60,6 +60,8 @@ body {
   justify-content: center; /* align horizontal */
   align-items: center; /* align vertical */
   background-color: #EFEFEF;
+  border: 1px solid #EFEFEF;
+  transition: border 0.1s ease-in;
 
   &:hover {
     //background-color: #EFEFEF;
@@ -103,6 +105,10 @@ body {
   }
 }
 
+.options-ul {
+  margin-bottom: 0;
+}
+
 .content-right {
   display: flex;
   justify-content: flex-end;
@@ -112,6 +118,12 @@ body {
 .content-center {
   display: flex;
   justify-content: center;
+}
+.content-left {
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  align-items: left;
 }
 
 .template-chooser-title {
